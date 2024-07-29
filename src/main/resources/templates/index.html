@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Gerenciador de Tarefas</h1>
+    <form action="/tasks" method="post" class="form-inline mt-3">
+        <input type="text" name="description" class="form-control mr-2" placeholder="Nova tarefa">
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+    </form>
+    <ul class="list-group mt-3">
+        <li class="list-group-item" th:each="task : ${tasks}">
+            <span th:text="${task.description}"></span>
+            <span th:if="${task.completed}" class="badge badge-success ml-2">Completa</span>
+            <form action="/tasks" th:action="@{/tasks/{id}/complete(id=${task.id})}" method="post" class="d-inline">
+                <button type="submit" class="btn btn-sm btn-success">Completar</button>
+            </form>
+            <form action="/tasks" th:action="@{/tasks/{id}/delete(id=${task.id})}" method="post" class="d-inline">
+                <button type="submit" class="btn btn-sm btn-danger">Excluir</button>
+            </form>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
