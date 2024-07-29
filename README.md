@@ -25,25 +25,25 @@ O **Task Manager** é um sistema de gerenciamento de tarefas desenvolvido em Jav
 
 task-manager/
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── com/
-│ │ │ │ ├── example/
-│ │ │ │ │ ├── taskmanager/
-│ │ │ │ │ │ ├── TaskManagerApplication.java
-│ │ │ │ │ │ ├── controller/
-│ │ │ │ │ │ │ └── TaskController.java
-│ │ │ │ │ │ ├── model/
-│ │ │ │ │ │ │ └── Task.java
-│ │ │ │ │ │ ├── repository/
-│ │ │ │ │ │ │ └── TaskRepository.java
-│ │ │ │ │ │ └── service/
-│ │ │ │ │ │ └── TaskService.java
-│ ├── resources/
-│ │ ├── templates/
-│ │ │ ├── index.html
-│ │ │ ├── tasks.html
-│ │ ├── application.properties
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── example/
+│   │   │   │   │   ├── taskmanager/
+│   │   │   │   │   │   ├── TaskManagerApplication.java
+│   │   │   │   │   │   ├── controller/
+│   │   │   │   │   │   │   └── TaskController.java
+│   │   │   │   │   │   ├── model/
+│   │   │   │   │   │   │   └── Task.java
+│   │   │   │   │   │   ├── repository/
+│   │   │   │   │   │   │   └── TaskRepository.java
+│   │   │   │   │   │   └── service/
+│   │   │   │   │   │       └── TaskService.java
+│   ├── resources/
+│   │   ├── templates/
+│   │   │   ├── index.html
+│   │   │   └── tasks.html
+│   │   └── application.properties
 ├── .gitignore
 ├── README.md
 ├── mvnw
