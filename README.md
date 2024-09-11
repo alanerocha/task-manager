@@ -1,6 +1,6 @@
 # Task Manager 
 
-## Descrição do Projeto
+## Descrição do Projeto:
 
 O **Task Manager** é um sistema de gerenciamento de tarefas desenvolvido em Java utilizando o framework Spring Boot. Este projeto tem como objetivo fornecer uma aplicação web simples, onde os usuários podem criar, visualizar, atualizar e excluir tarefas. É um exemplo prático que demonstra como construir um CRUD (Create, Read, Update, Delete) utilizando tecnologias modernas e boas práticas de desenvolvimento.
 
